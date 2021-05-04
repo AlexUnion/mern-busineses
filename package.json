@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,12 @@
   },
   "homepage": "https://github.com/AlexUnion/mern-busineses#readme",
   "dependencies": {
+    "config": "^3.3.6",
     "express": "^4.17.1",
     "mongoose": "^5.12.7"
   },
   "devDependencies": {
+    "concurrently": "^6.0.2",
     "nodemon": "^2.0.7"
   }
 }
