@@ -1,0 +1,31 @@
+{
+  "name": "mern-busineses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexUnion/mern-busineses.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "Mongo"
+  ],
+  "author": "Alex Kyrychenko <alex2015mig@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexUnion/mern-busineses/issues"
+  },
+  "homepage": "https://github.com/AlexUnion/mern-busineses#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
