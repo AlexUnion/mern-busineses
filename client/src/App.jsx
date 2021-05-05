@@ -1,10 +1,15 @@
+import React from "react";
 import "./App.css";
+import Header from "./components/header/header.component";
 
 function App() {
   return (
-    <main>
-      <h1>Hello</h1>
-    </main>
+    <React.Fragment>
+      <Header />
+      <main>
+        <h1>Hello</h1>
+      </main>
+    </React.Fragment>
   );
 }
 
