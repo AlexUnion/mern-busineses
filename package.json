@@ -1,5 +1,5 @@
 {
-  "name": "mern-busineses",
+  "name": "mern-businesses",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexUnion/mern-busineses.git"
+    "url": "git+https://github.com/AlexUnion/mern-businesses.git"
   },
   "keywords": [
     "Node",
@@ -19,10 +19,11 @@
   "author": "Alex Kyrychenko <alex2015mig@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexUnion/mern-busineses/issues"
+    "url": "https://github.com/AlexUnion/mern-businesses/issues"
   },
-  "homepage": "https://github.com/AlexUnion/mern-busineses#readme",
+  "homepage": "https://github.com/AlexUnion/mern-businesses#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "config": "^3.3.6",
     "express": "^4.17.1",
     "mongoose": "^5.12.7"
