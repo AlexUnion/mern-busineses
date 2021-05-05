@@ -40,4 +40,11 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
+  background-color: #eee;
+}
+header {
+  background-color: rgb(18, 35, 84);
+}
+footer {
+  background-color: rgb(18, 35, 84);;
 }

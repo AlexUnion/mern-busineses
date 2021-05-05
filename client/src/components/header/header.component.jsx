@@ -1,13 +1,21 @@
 import React from "react";
+import "./header.css";
 
-function Header() {
+function Header(props) {
+  const { active } = props;
   return (
-    <header className="container bg-blue-500">
-      <nav className="flex justify-center">
-        <ul>
-          <li>Home</li>
-          <li>nav 2</li>
-          <li>nav 3</li>
+    <header className="header py-4">
+      <nav className="container mx-auto max-w-screen-lg">
+        <ul className="flex">
+          <li className={active === "home" ? "active" : ""}>
+            <a href="/">Home</a>
+          </li>
+          <li className={active === "2" ? "active" : ""}>
+            <a href="#">nav 2</a>
+          </li>
+          <li className={active === "3" ? "active" : ""}>
+            <a href="#">nav 3</a>
+          </li>
         </ul>
       </nav>
     </header>

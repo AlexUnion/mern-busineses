@@ -1,0 +1,7 @@
+.header nav li {
+    @apply font-medium text-2xl mr-10;
+    color: #eee;
+}
+.header nav li.active {
+    border-bottom: 2px solid white;
+}
