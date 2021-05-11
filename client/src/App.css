@@ -1,3 +1,7 @@
+/*
+header: 66px
+footer: 61px
+*/
 main {
-  min-height: calc(100vh - 66px - 24px);
+  min-height: calc(100vh - 66px - 61px);
 }

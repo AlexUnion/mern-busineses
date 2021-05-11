@@ -1,15 +1,16 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header/header.component";
+import List from "./components/list/list.component";
 
 function App() {
   return (
     <React.Fragment>
       <Header active={"home"} />
       <main className="container mx-auto max-w-screen-lg pt-6">
-        <h1>Hello</h1>
+        <List />
       </main>
-      <footer className="container mx-auto max-w-screen-lg">Alex 2021</footer>
+      <footer className="text-center">All rights reserved © Alex 2021</footer>
     </React.Fragment>
   );
 }

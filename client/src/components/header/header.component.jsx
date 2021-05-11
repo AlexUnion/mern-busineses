@@ -8,13 +8,13 @@ function Header(props) {
       <nav className="container mx-auto max-w-screen-lg">
         <ul className="flex">
           <li className={active === "home" ? "active" : ""}>
-            <a href="/">Home</a>
+            <a href="/">Головна</a>
           </li>
-          <li className={active === "2" ? "active" : ""}>
-            <a href="#">nav 2</a>
+          <li className={active === "search" ? "active" : ""}>
+            <a href="#">Пошук</a>
           </li>
-          <li className={active === "3" ? "active" : ""}>
-            <a href="#">nav 3</a>
+          <li className={active === "about" ? "active" : ""}>
+            <a href="#">Про нас</a>
           </li>
         </ul>
       </nav>

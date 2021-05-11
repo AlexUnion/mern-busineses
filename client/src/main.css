@@ -46,5 +46,27 @@ header {
   background-color: rgb(18, 35, 84);
 }
 footer {
-  background-color: rgb(18, 35, 84);;
+  background-color: rgb(18, 35, 84);
+  padding: 20px 0;
+  color: #eee;
+  font-size: 14px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 26px;
+  color: #111;
+}
+p {
+  font-size: 16px;
+  color: #333;
+}
+.btn {
+  background-color: rgb(37, 97, 158);
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition: background-color .2s linear;
+}
+.btn:hover {
+  background-color: rgb(28, 76, 129);
 }
