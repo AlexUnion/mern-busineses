@@ -1,6 +1,22 @@
 .required {
     color: red;
 }
-form label {
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+.label, .select {
     cursor: pointer;
+}
+.form-item {
+    margin-bottom: 20px;
+}
+.input {
+    display: block;
+    width: 100%;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+}
+.form-submit {
+    text-align: right;
 }
