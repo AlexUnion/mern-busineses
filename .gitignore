@@ -2,6 +2,7 @@
 .idea
 node_modules
 config
+build
 
 # files
 package-lock.json
