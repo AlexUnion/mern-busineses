@@ -1,0 +1,6 @@
+.required {
+    color: red;
+}
+form label {
+    cursor: pointer;
+}
