@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/", require(path.join(__dirname, "/routes/home.routes.js")));
+app.use("/search", require(path.join(__dirname, "/routes/search.route.js")));
 
 async function start() {
   try {
