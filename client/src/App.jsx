@@ -9,11 +9,14 @@ import Search from "./pages/search";
 function App() {
   return (
     <BrowserRouter>
-      <Header active={"/"} />
+      <Header />
       <MainLayout>
         <Switch>
           <Route path="/about">
             <h2>About</h2>
+          </Route>
+          <Route path="/add">
+            <h2>add</h2>
           </Route>
           <Route exact path="/search" component={Search} />
           <Route path="/" component={List} />

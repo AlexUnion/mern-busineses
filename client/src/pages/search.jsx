@@ -1,6 +1,5 @@
 import React from "react";
 import "./search.css";
-import List from "../components/list/list.component";
 
 function Search() {
   return (
@@ -23,11 +22,15 @@ function Search() {
         </div>
         <div className="form-item">
           <p>Виберіть тип бізнесу</p>
-          <select size="1" name="type" id="type" className="input">
-            <option value="none" selected disabled>
-              Тип
-            </option>
+          <select
+            size="1"
+            name="type"
+            id="type"
+            className="input"
+            defaultValue="none"
+          >
             <option value="cafe">Кафе</option>
+            <option value="cafe">Міні-маркет</option>
           </select>
         </div>
         <div className="form-submit">
