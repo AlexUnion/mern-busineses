@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 function Header(props) {
@@ -7,14 +8,14 @@ function Header(props) {
     <header className="header py-4">
       <nav className="container mx-auto max-w-screen-lg">
         <ul className="flex">
-          <li className={active === "home" ? "active" : ""}>
-            <a href="/">Головна</a>
+          <li className={active === "/" ? "active" : ""}>
+            <Link to="/">Головна</Link>
           </li>
           <li className={active === "search" ? "active" : ""}>
-            <a href="#">Пошук</a>
+            <Link to="/search">Пошук</Link>
           </li>
           <li className={active === "about" ? "active" : ""}>
-            <a href="#">Про нас</a>
+            <Link to="/about">Про нас</Link>
           </li>
         </ul>
       </nav>
