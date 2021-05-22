@@ -2,7 +2,7 @@ import React from "react";
 import "./card.css";
 
 function Card(props) {
-  const { name, url, description, type } = props;
+  const { name, url, description, type, city } = props;
   return (
     <article className="card-container rounded-xl flex justify-between">
       <img src={url} alt="" className="rounded-xl inline-block" />
@@ -10,7 +10,7 @@ function Card(props) {
         <h2>{`${type}: ${name}`}</h2>
         <p>{description}</p>
         <div className="card-btn-wrapper flex justify-between pt-2">
-          <div className="card-type">{type}</div>
+          <div className="card-type">{city}</div>
           <button className="btn" type="button">
             Читати далі
           </button>
