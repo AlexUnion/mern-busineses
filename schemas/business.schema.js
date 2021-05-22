@@ -9,6 +9,10 @@ const businessSchema = new Schema({
     type: String,
     required: true,
   },
+  type: {
+    type: String,
+    required: true,
+  },
   shortDescription: {
     type: String,
   },
