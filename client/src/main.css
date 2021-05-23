@@ -70,3 +70,11 @@ p {
 .btn:hover {
   background-color: rgb(28, 76, 129);
 }
+
+label, select {
+  cursor: pointer;
+}
+form {
+  width: 400px;
+  margin: 0 auto;
+}

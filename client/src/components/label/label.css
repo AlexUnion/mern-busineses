@@ -1,0 +1,9 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+}
+.required {
+    color: red;
+}
