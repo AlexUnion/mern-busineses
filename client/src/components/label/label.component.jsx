@@ -25,6 +25,7 @@ const Label = (props) => {
                     placeholder={placeholder}
                     required={required}
                     className="input"
+                    autoComplete="off"
                 />
                 <p className='text-red-600 text-sm'>
                     {((meta?.visited && meta?.modified) || meta?.touched) && meta?.error}

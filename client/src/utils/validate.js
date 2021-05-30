@@ -1,5 +1,7 @@
-export const required = (value) => value ? null : "Required field!";
-export const length = (min = 0, max) => (
+import { types } from "../data/business.type";
+
+export const isRequired = (value) => value ? undefined : "Required field!";
+export const hasLength = (min = 0, max) => (
     function (value = "") {
         const { length } = value;
         if (length < min) {
@@ -7,6 +9,10 @@ export const length = (min = 0, max) => (
         } else if (max && length > max) {
             return `The maximum length must be greater than ${max}`;
         }
-        return null;
+        return undefined;
     }
 );
+export const validateType = (current) => {
+    const hasType = types.findIndex(({value}) => (value === current));
+    return ~hasType ? undefined : "Invalid type!";
+};

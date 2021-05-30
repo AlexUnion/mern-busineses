@@ -3,18 +3,22 @@ import { Field, Form } from "react-final-form";
 import Label
     from "../../components/label/label.component";
 import Selector from "../../components/selector/selector";
-import { required, length } from "../../utils/validate";
+import {
+    isRequired,
+    hasLength,
+    validateType,
+} from "../../utils/validate";
 
 const handleSubmit = (data) => {
-    //do fetch request
     console.log(data);
 };
-const handleValidate = ({ title, city }) => {
+const handleValidate = ({ title, city, type }) => {
     const errors = {};
-    const requiredLength = length(3, 15);
+    const requiredLength = hasLength(3, 15);
 
-    errors.title = required(title) || requiredLength(title);
-    errors.city = required(city) || requiredLength(city);
+    errors.title = isRequired(title) || requiredLength(title);
+    errors.city = isRequired(city) || requiredLength(city);
+    errors.type = validateType(type);
 
     return errors;
 };
@@ -28,7 +32,6 @@ function Add() {
                   render={({ handleSubmit }) => (
                       <form action="" method="POST"
                             onSubmit={handleSubmit}
-
                             className="my-6 text-left">
                           <Field component={Label}
                                  title="Введіть назву бізнесу"
@@ -44,7 +47,9 @@ function Add() {
                           <Field component={Selector}
                                  className="mt-3"
                                  title="Виберіть тип вашого бізнесу"
-                                 name="type"/>
+                                 name="type"
+                                 defaultValue="none"
+                                 required/>
                           <div className="mt-6 text-right">
                               <button type="submit"
                                       className="btn">
