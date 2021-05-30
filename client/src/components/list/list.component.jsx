@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../card/card.component";
+import Loader from "../loader/loader.component";
 
 const cards = [];
 
@@ -20,8 +21,15 @@ function List() {
         <div className="py-4">
             {
                 isLoading ?
-                    <h2>Loading</h2> :
-                    cards.map(({ _id, title, city, shortDescription, img, type }) => (
+                    <Loader/> :
+                    cards.map(({
+                                   _id,
+                                   title,
+                                   city,
+                                   shortDescription,
+                                   img,
+                                   type
+                               }) => (
                         <Card
                             key={_id}
                             name={title}
