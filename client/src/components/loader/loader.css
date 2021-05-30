@@ -1,3 +1,12 @@
+.opacity-container {
+    top: 64px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #111;
+    opacity: .3;
+}
 .lds-roller {
     display: inline-block;
     position: absolute;

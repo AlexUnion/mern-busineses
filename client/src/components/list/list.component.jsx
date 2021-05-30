@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "../card/card.component";
 import Loader from "../loader/loader.component";
+import { SERVER_URI } from "../../utils/constants";
 
 const cards = [];
 
@@ -8,7 +9,7 @@ function List() {
     const [ isLoading, setLoading ] = useState(true);
     useEffect(() => {
         cards.length = 0;
-        fetch('http://127.0.0.1:5000/')
+        fetch(SERVER_URI)
             .then((data) => data.json())
             .then((list) => {
                 console.log(list);

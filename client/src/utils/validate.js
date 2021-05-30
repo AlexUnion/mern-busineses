@@ -13,6 +13,11 @@ export const hasLength = (min = 0, max) => (
     }
 );
 export const validateType = (current) => {
-    const hasType = types.findIndex(({value}) => (value === current));
+    const hasType = types.findIndex(({ value }) => (value === current));
     return ~hasType ? undefined : "Invalid type!";
 };
+export const maxLength = (max) => (
+    function (str = '') {
+        return str.length < max ? undefined : `Symbol counts must be less then ${max}`;
+    }
+)
