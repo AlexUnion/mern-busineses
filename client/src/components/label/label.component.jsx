@@ -2,7 +2,14 @@ import React from "react";
 import "./label.css";
 
 const Label = (props) => {
-    const { className, title, required, ...rest } = props;
+    const {
+        className,
+        title,
+        required,
+        placeholder,
+        input,
+        meta
+    } = props;
     return (
         <div className={className}>
             <label>
@@ -14,10 +21,14 @@ const Label = (props) => {
                 }
                 </p>
                 <input
-                    {...rest}
+                    {...input}
+                    placeholder={placeholder}
                     required={required}
                     className="input"
                 />
+                <p className='text-red-600 text-sm'>
+                    {((meta?.visited && meta?.modified) || meta?.touched) && meta?.error}
+                </p>
             </label>
         </div>
     );
