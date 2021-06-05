@@ -78,3 +78,7 @@ form {
   width: 400px;
   margin: 0 auto;
 }
+
+.indent {
+  text-indent: 2rem;
+}

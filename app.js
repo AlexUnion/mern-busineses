@@ -21,6 +21,7 @@ app.use(useWhiteList);
 app.use("/", require(path.join(__dirname, "/routes/home.route.js")));
 app.use("/search", require(path.join(__dirname, "/routes/search.route.js")));
 app.use("/add", require(path.join(__dirname, "/routes/add.route.js")));
+app.use("/business", require(path.join(__dirname, "/routes/business.route.js")));
 
 async function start() {
     try {
