@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/header.component";
-import List from "./components/list/list.component";
 import MainLayout from "./layout/mainLayout";
 import Search from "./pages/search/search";
 import Add from "./pages/add/add";
+import Main from "./pages/main/main";
 
 function App() {
     return (
@@ -20,10 +20,11 @@ function App() {
                     <Route path="/about">
                         <h2>About</h2>
                     </Route>
-                    <Route path="/add" component={Add}/>
-                    <Route exact path="/search"
-                           component={Search}/>
-                    <Route path="/" component={List}/>
+                    <Route path="/add" render={() => <Add/>}/>
+                    <Route path="/search"
+                           render={() => <Search/>}/>
+                    <Route path='/business/:id'/>
+                    <Route exact path="/" render={() => <Main/>}/>
                 </Switch>
             </MainLayout>
             <footer className="text-center">
