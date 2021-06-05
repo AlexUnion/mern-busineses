@@ -16,6 +16,7 @@ function List(props) {
                         }) => (
                 <Card
                     key={_id}
+                    id={_id}
                     name={title}
                     url={img}
                     description={shortDescription}
