@@ -42,6 +42,7 @@ function Add() {
     });
 
     const handleSubmit = (data) => {
+        console.log(data);
         const uri = `${SERVER_URI}/add`;
         const normalizedData = {
             title: normalizeString(data.title),
@@ -52,6 +53,7 @@ function Add() {
             img: data.img || "http://consaltliga.com.ua/wp-content/themes/consultix/images/no-image-found-360x250.png",
         };
 
+        return;
         setNotification({
             isLoad: true,
             message: "",
