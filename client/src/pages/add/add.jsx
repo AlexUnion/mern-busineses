@@ -53,7 +53,6 @@ function Add() {
             img: data.img || "http://consaltliga.com.ua/wp-content/themes/consultix/images/no-image-found-360x250.png",
         };
 
-        return;
         setNotification({
             isLoad: true,
             message: "",
@@ -111,10 +110,10 @@ function Add() {
                                  required/>
                           <Field component={TextArea}
                                  name="shortDescription"
-                                 placeholder="Введіть короткий опис(до 50 символів)"/>
+                                 placeholder="Введіть короткий опис(до 200 символів)"/>
                           <Field component={TextArea}
                                  name="description"
-                                 placeholder="Введіть повний опис(до 300 символів)"/>
+                                 placeholder="Введіть повний опис(до 1000 символів)"/>
                           <div className="mt-6 text-right">
                               <button type="submit"
                                       className="btn">

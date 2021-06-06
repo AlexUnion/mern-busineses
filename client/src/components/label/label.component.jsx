@@ -8,7 +8,8 @@ const Label = (props) => {
         required,
         placeholder,
         input,
-        meta
+        meta,
+        onChange
     } = props;
     return (
         <div className={className}>
@@ -26,6 +27,7 @@ const Label = (props) => {
                     required={required}
                     className="input"
                     autoComplete="off"
+                    onChange={onChange}
                 />
                 <p className='text-red-600 text-sm'>
                     {((meta?.visited && meta?.modified) || meta?.touched) && meta?.error}

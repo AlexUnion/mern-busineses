@@ -21,6 +21,10 @@ router.post("/", async (req, res) => {
         description
     });
 
+    const doc = await Business.find({city: {$regex: /w+/gi}})
+
+    console.log(doc);
+    return res.json({});
     await business.save();
     res.json({ message: "Успіх!!!" });
 });

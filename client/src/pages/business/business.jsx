@@ -21,7 +21,7 @@ const Business = ({ id }) => {
                 card = item;
                 setLoading(false);
             });
-    }, []);
+    }, [id]);
 
     const typeLabel = card.type && getLabel(card.type);
 
@@ -66,7 +66,7 @@ const Business = ({ id }) => {
                             </p>
                             <div className='link-container'>
                                 <span>Наш веб сайт:</span>
-                                <a href='#'>Перейти</a>
+                                <a href='/'>Перейти</a>
                             </div>
                         </div>
                     </div>
@@ -74,6 +74,5 @@ const Business = ({ id }) => {
         </>
     );
 };
-;
 
 export default Business;
